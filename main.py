@@ -20,9 +20,8 @@ async def get_dogs():
         response.raise_for_status()
 
         data = response.json()
-
         top_level_breeds = list(data["message"].keys())
 
-        return {"dogs": top_level_breeds}
+        return {"dogs": data["message"]}
     except httpx.HTTPError as e:
         raise HTTPException(status_code=e.response.status_code, detail="Error fetching data from Dog API")
