@@ -16,7 +16,7 @@ The goal of this project is to explore FastAPI, a modern, fast (high-performance
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Alaina-Noel/fastapi_project.git
 
 ### Installation dependencies
    pip install -r requirements.txt
